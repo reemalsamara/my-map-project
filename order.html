@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="order.js" defer></script>
+  <title>realtor</title>
+  <link rel="icon" type="image/x-icon" href="homelogo.jpeg">
+
+  <link rel="stylesheet" href="project.css" />
+
+</head>
+
+<body>
+  <nav>
+    <a href=" home.html" class="dropdown-button">Home</a>
+    <a href="about.html" class="dropdown-button">About</a>
+    <div class="dropdown">
+      <a href="" class="dropdown-button">Menu</a>
+      <div class="dropdown-content">
+        <a href="calendar.html">Calendar</a>
+        <a href="menulist.html">Menu List</a>
+      </div>
+    </div>
+    <a href="assignment4.html" class="dropdown-button">Member</a>
+    <a href="order.html " class="dropdown-button">Order</a>
+    <a href="location.html" class="dropdown-button">Location</a>
+    <a href="Contact.html" class="dropdown-button">Contact</a>
+    <a href="sitemap.html" class="dropdown-button">Site Map</a>
+  </nav>
+  <h1>Total price</h1>
+  <div id=selected>
+    <label>
+      <input type="radio" id="Kitchener" name="property" value="Kitchener"> Kitchener property &nbsp; &nbsp; $949,000
+    </label><br>
+
+    <label>
+      <input type="radio" id="Hamilton" name="property" value="Hamilton"> Hamilton property &nbsp;&nbsp; $ 1,100,000
+    </label><br>
+
+    <label>
+      <input type="radio" id="Burlington" name="property" value="Burlington"> Burlington property &nbsp;&nbsp;
+      $2,399,000
+    </label>
+  </div>
+  <br>
+  <button onclick="calculateTotal()">Calculate Total Price</button>
+
+  <p id="result" style="white-space: pre-wrap; font-weight: bold;"></p>
+</body>
+
+</html>

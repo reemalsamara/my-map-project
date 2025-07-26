@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>book an appointment</title>
+  <link rel="icon" type="image/x-icon" href="homelogo.jpeg">
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+  <nav>
+    <a href=" home.html" class="dropdown-button">Home</a>
+    <a href="about.html" class="dropdown-button">About</a>
+    <div class="dropdown">
+      <a href="" class="dropdown-button">Menu</a>
+      <div class="dropdown-content">
+        <a href="calendar.html">Calendar</a>
+        <a href="menulist.html">Menu List</a>
+      </div>
+    </div>
+    <a href="assignment4.html" class="dropdown-button">Member</a>
+    <a href="order.html " class="dropdown-button">Order</a>
+    <a href="location.html" class="dropdown-button">Location</a>
+    <a href="Contact.html" class="dropdown-button">Contact</a>
+    <a href="sitemap.html" class="dropdown-button">Site Map</a>
+  </nav>
+  <form action="tamerh73@hotmail.com ">
+    <fieldset>
+      <legend>Customer Information</legend>
+      <label>*First Name:
+        <input type="text" name="CName" id="CName" required></label>
+      <br><br>
+      <label>*Last Name:
+        <input type="text" name="CName" id="CName" required></label>
+      <br><br>
+      <label>*Email:
+        <input type="email" name="CEmail" id="CEmail" required></label>
+      <br><br>
+      <label>*Mobile:
+        <input type="tel" name="CMobile" id="CMobile" required></label>
+    </fieldset><br>
+
+    <label>property Type : <br>
+      <input type="checkbox" name="propertyType" value="house"> House
+      <br>
+      <input type="checkbox" name="propertyType" value="condominium"> Condominium
+    </label><br>
+
+    <label for="Number of bedroom"> Number of bedrooms</label>
+    <input type="number" name="Number of bedrooms" id="Number of bedrooms" min="1" max="10"><br>
+
+    <label for="Number of bathrooms"> Number of bathrooms</label>
+    <input type="number" name="Number of bathrooms" id="Number of bathrooms" min="1" max="10"> <br>
+
+    <label for="pricerange">price range:</label><br>
+    500,000<input type="range" name="pricerange" id="pricerange"> 3,000,000
+    <br>
+
+    <label for="Area">Area in Gta :</label>
+    <input type="text" name="Area" id="Area" list="AreaList">
+    <datalist id="AreaList">
+      <option>Toronto</option>
+      <option>Kitchener</option>
+      <option>Burlington</option>
+      <option>Hamilton</option>
+      <option>Milton</option>
+      <option>Mississauga</option>
+      <option>Oakvile</option>
+      <option>Other</option>
+    </datalist><br>
+
+    <label for="myDate">prefer date</label>
+    <input type="date" name="myDate" id="myDate">
+
+    <label for="comment">add a comment: </label>
+    <textarea name="comment" id="comment" rows="4" cols="90"></textarea><br>
+
+    <input type="submit" value="submit"> <input type="reset">
+  </form>
+</body>
+<footer>
+  <a href="home.html" target="_blank">
+    <img src="tamerhosny.jpeg" alt="realtor" class="realtor-img">
+  </a>
+</footer>
+
+</html>

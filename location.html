@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>realtor</title>
+  <link rel="icon" type="image/x-icon" href="homelogo.jpeg">
+
+  <link rel="stylesheet" href="project.css" />
+  <script src="location.js" defer></script>
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJw4U6U09sjup8YLwFZX7BW1kVgV-EUsU&callback=initmap"></script>
+
+
+</head>
+
+<body>
+  <nav>
+    <a href=" home.html" class="dropdown-button">Home</a>
+    <a href="about.html" class="dropdown-button">About</a>
+    <div class="dropdown">
+      <a href="" class="dropdown-button">Menu</a>
+      <div class="dropdown-content">
+        <a href="calendar.html">Calendar</a>
+        <a href="menulist.html">Menu List</a>
+      </div>
+    </div>
+    <a href="assignment4.html" class="dropdown-button">Member</a>
+    <a href="order.html " class="dropdown-button">Order</a>
+    <a href="location.html" class="dropdown-button">Location</a>
+    <a href="Contact.html" class="dropdown-button">Contact</a>
+    <a href="sitemap.html" class="dropdown-button">Site Map</a>
+  </nav>
+
+  <div id="displayMap"></div>
+  <div id="routeBox"></div>
+  <label for="thisLocation">Enter your current address:</label>
+  <input type="text" id="thisLocation">
+  <button id="showRouteBtn">Show Route</button>
+</body>
+
+</html>
